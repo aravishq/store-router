@@ -31,7 +31,7 @@ class ConfigDumpCommand extends Command
     public function __construct(
         StoreRepositoryInterface $storeRepository,
         ScopeConfigInterface $scopeConfig,
-        string $name = null
+        ?string $name = null
     ) {
         parent::__construct($name);
 
