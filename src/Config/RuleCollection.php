@@ -51,7 +51,7 @@ class RuleCollection
      *
      * @return void
      */
-    public function assert(string $groupId = null)
+    public function assert(?string $groupId = null)
     {
         foreach ($this->rules as $key => $value) {
             $className = self::$ruleMapping[$key] ?: null;
